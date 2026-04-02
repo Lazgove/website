@@ -1,0 +1,213 @@
+.page {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+/* ── Hero ─────────────────────────────────────────────────────── */
+.hero {
+  padding: 1.5rem 0 1.25rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.name {
+  font-size: clamp(2rem, 5vw, 3.75rem);
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+}
+
+.role {
+  font-size: clamp(0.875rem, 1.5vw, 1.0625rem);
+  color: var(--text-2);
+  margin-top: 0.6rem;
+  letter-spacing: -0.01em;
+}
+
+.location {
+  font-size: 0.8125rem;
+  color: var(--text-3);
+  white-space: nowrap;
+  align-self: flex-end;
+}
+
+/* ── Bio + Contact row ────────────────────────────────────────── */
+.bioRow {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 4rem;
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--border);
+  align-items: start;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 0.9375rem;
+  color: var(--text-2);
+  line-height: 1.75;
+  max-width: 640px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contactList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contactList a {
+  font-size: 0.8125rem;
+  color: var(--text-2);
+  transition: color var(--dur) var(--ease);
+}
+.contactList a:hover { color: var(--text); }
+
+/* ── Generic section ─────────────────────────────────────────── */
+.section {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 3rem;
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--border);
+  align-items: start;
+}
+
+.sectionLabel {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.67rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  padding-top: 0.2rem;
+}
+
+/* ── Timeline / Jobs ──────────────────────────────────────────── */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.job {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.jobHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.jobRole {
+  display: block;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+}
+
+.jobCompany {
+  display: block;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.72rem;
+  color: var(--text-3);
+  margin-top: 0.3rem;
+  letter-spacing: 0.02em;
+}
+
+.jobPeriod {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.7rem;
+  color: var(--text-3);
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+}
+
+.jobBullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  padding-left: 1rem;
+  border-left: 1px solid var(--border);
+}
+
+.jobBullets li {
+  font-size: 0.8125rem;
+  color: var(--text-2);
+  line-height: 1.6;
+}
+
+.jobNote {
+  font-size: 0.8125rem;
+  color: var(--text-2);
+  line-height: 1.65;
+  padding-left: 1rem;
+  border-left: 1px solid var(--border);
+}
+
+/* ── Skills ───────────────────────────────────────────────────── */
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.skillGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.skillCategory {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.67rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+
+.skillList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.skillList li {
+  font-size: 0.8125rem;
+  color: var(--text-2);
+  line-height: 1.5;
+}
+
+/* ── Responsive ───────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .section { grid-template-columns: 1fr; gap: 1.25rem; }
+  .bioRow  { grid-template-columns: 1fr; gap: 2rem; }
+  .skillsGrid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 640px) {
+  .hero { padding: 1.25rem 0 1rem; }
+  .skillsGrid { grid-template-columns: 1fr; }
+  .jobHeader { flex-direction: column; gap: 0.25rem; }
+}

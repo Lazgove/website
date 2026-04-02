@@ -1,0 +1,41 @@
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 2rem var(--gutter);
+  margin-top: 6rem;
+}
+
+.inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.name {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.role {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.7rem;
+  color: var(--text-3);
+  letter-spacing: 0.01em;
+}
+
+.email {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.7rem;
+  color: var(--text-3);
+  letter-spacing: 0.01em;
+  transition: color var(--dur) var(--ease);
+}
+.email:hover { color: var(--text); }
+
+@media (max-width: 640px) {
+  .role { display: none; }
+}

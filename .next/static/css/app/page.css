@@ -1,0 +1,146 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./components/ProjectCard.module.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************/
+.ProjectCard_card__ynzED {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  cursor: pointer;
+}
+
+.ProjectCard_thumbnail__dczWS {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 3 / 2;
+}
+
+
+.ProjectCard_shape__REmE2 {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 600ms var(--ease-out);
+}
+
+.ProjectCard_hoverLayer__4ar0O {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: background var(--dur) var(--ease);
+}
+
+.ProjectCard_addMedia__OAp5d {
+  position: absolute;
+  bottom: 12px;
+  right: 14px;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.2);
+  pointer-events: none;
+  transition: opacity var(--dur) var(--ease);
+}
+
+/* hover */
+.ProjectCard_card__ynzED:hover .ProjectCard_shape__REmE2      { transform: scale(1.025); }
+.ProjectCard_card__ynzED:hover .ProjectCard_hoverLayer__4ar0O { background: rgba(0, 0, 0, 0.12); }
+.ProjectCard_card__ynzED:hover .ProjectCard_addMedia__OAp5d   { opacity: 0.6; }
+
+.ProjectCard_meta___zlZS {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.ProjectCard_title__rP0_G {
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  color: var(--text);
+  line-height: 1.3;
+}
+
+.ProjectCard_sub__fntQ9 {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.68rem;
+  color: var(--text-3);
+  letter-spacing: 0.02em;
+}
+
+/*!***************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./app/page.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************/
+.page_page__556_G {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.page_intro__YeqBg {
+  padding: 3.5rem 0 2.5rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 2.5rem;
+}
+
+.page_tagline__FsEDs {
+  font-family: var(--font-mono), monospace;
+  font-size: 1.1rem;
+  color: var(--text-3);
+  letter-spacing: 0.03em;
+}
+
+.page_grid__JZ9Cz {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1.5rem 1.5rem;
+  gap: 1.5rem 1.5rem;
+  padding-bottom: 0;
+}
+
+
+.page_cta__i2v5_ {
+  padding: 5rem 0;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+.page_ctaHeading__UuZzs {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.page_ctaButton__lcwUc {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  border: 1px solid var(--text);
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: background var(--dur) var(--ease), color var(--dur) var(--ease);
+}
+.page_ctaButton__lcwUc:hover {
+  background: var(--text);
+  color: var(--white);
+}
+
+@media (max-width: 640px) {
+  .page_grid__JZ9Cz {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+.page_intro__YeqBg {
+    padding: 2rem 0 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+

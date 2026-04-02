@@ -1,0 +1,102 @@
+.page {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.header {
+  padding: 3.5rem var(--gutter) 2.5rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: baseline;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  white-space: nowrap;
+}
+
+.desc {
+  font-size: 0.875rem;
+  color: var(--text-2);
+  max-width: 480px;
+  line-height: 1.65;
+}
+
+/* Three.js scene — full bleed */
+.sceneLoading {
+  width: 100%;
+  height: 65vh;
+  min-height: 380px;
+  background: #06060e;
+}
+
+/* Experiment slots grid */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--border);
+  border-top: 1px solid var(--border);
+  margin-top: 0;
+}
+
+.slot {
+  background: var(--bg);
+  padding: 2.5rem var(--gutter);
+  transition: background var(--dur) var(--ease);
+}
+.slot:hover { background: #f0f0ee; }
+
+.slotInner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  max-width: 420px;
+}
+
+.slotTop {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.category {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.67rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+
+.badge {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: var(--border);
+  color: var(--text-3);
+  padding: 2px 8px;
+  border-radius: 20px;
+}
+
+.slotTitle {
+  font-size: 1.125rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+.slotDesc {
+  font-size: 0.8125rem;
+  color: var(--text-2);
+  line-height: 1.65;
+}
+
+@media (max-width: 640px) {
+  .grid { grid-template-columns: 1fr; }
+  .header { flex-direction: column; gap: 1rem; padding-bottom: 1.75rem; }
+}

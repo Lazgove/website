@@ -1,0 +1,91 @@
+.page {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+/* ── Hero ─────────────────────────────────────────────────────── */
+.hero {
+  padding: 4rem 0 3rem;
+}
+
+.heading {
+  font-size: clamp(3rem, 8vw, 7rem);
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 1.0;
+  color: #c8d8b0;
+  margin-bottom: 2rem;
+}
+
+.sub {
+  font-size: 0.9375rem;
+  color: var(--text-2);
+  max-width: 560px;
+  line-height: 1.75;
+}
+
+/* ── Divider ──────────────────────────────────────────────────── */
+.divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 0;
+}
+
+/* ── Enquiries ────────────────────────────────────────────────── */
+.enquiries {
+  padding: 2.5rem 0 2rem;
+}
+
+.enquiryLine {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+}
+
+.enquiryEmail {
+  border-bottom: 1px solid var(--text);
+  transition: opacity var(--dur) var(--ease);
+}
+.enquiryEmail:hover { opacity: 0.5; }
+
+.phone {
+  font-size: 0.9rem;
+  color: var(--text-2);
+}
+.phone a {
+  transition: color var(--dur) var(--ease);
+}
+.phone a:hover { color: var(--text); }
+
+/* ── Social icons ─────────────────────────────────────────────── */
+.socials {
+  display: flex;
+  gap: 2rem;
+  padding: 2.5rem 0 4rem;
+}
+
+.socialLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text);
+  transition: opacity var(--dur) var(--ease);
+}
+.socialLink:hover { opacity: 0.4; }
+
+.socialLink span {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+
+/* ── Responsive ───────────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .hero { padding: 2.5rem 0 2rem; }
+  .socials { gap: 1.5rem; flex-wrap: wrap; }
+}

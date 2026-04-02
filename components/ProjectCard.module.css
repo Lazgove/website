@@ -1,0 +1,68 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  cursor: pointer;
+}
+
+.thumbnail {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 3 / 2;
+}
+
+
+.shape {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 600ms var(--ease-out);
+}
+
+.hoverLayer {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: background var(--dur) var(--ease);
+}
+
+.addMedia {
+  position: absolute;
+  bottom: 12px;
+  right: 14px;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.2);
+  pointer-events: none;
+  transition: opacity var(--dur) var(--ease);
+}
+
+/* hover */
+.card:hover .shape      { transform: scale(1.025); }
+.card:hover .hoverLayer { background: rgba(0, 0, 0, 0.12); }
+.card:hover .addMedia   { opacity: 0.6; }
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.title {
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  color: var(--text);
+  line-height: 1.3;
+}
+
+.sub {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.68rem;
+  color: var(--text-3);
+  letter-spacing: 0.02em;
+}

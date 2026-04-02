@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/Documents/website/website/components/Footer.module.css"],"sourcesContent":[".footer {\n  border-top: 1px solid var(--border);\n  padding: 2rem var(--gutter);\n  margin-top: 6rem;\n}\n\n.inner {\n  max-width: var(--max-width);\n  margin: 0 auto;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  gap: 1rem;\n  flex-wrap: wrap;\n}\n\n.name {\n  font-size: 0.8125rem;\n  font-weight: 500;\n  letter-spacing: -0.01em;\n}\n\n.role {\n  font-family: var(--font-mono), monospace;\n  font-size: 0.7rem;\n  color: var(--text-3);\n  letter-spacing: 0.01em;\n}\n\n.email {\n  font-family: var(--font-mono), monospace;\n  font-size: 0.7rem;\n  color: var(--text-3);\n  letter-spacing: 0.01em;\n  transition: color var(--dur) var(--ease);\n}\n.email:hover { color: var(--text); }\n\n@media (max-width: 640px) {\n  .role { display: none; }\n}\n"],"names":[],"mappings":"AAAA;;;;;;AAMA;;;;;;;;;;AAUA;;;;;;AAMA;;;;;;;AAOA;;;;;;;;AAOA;;;;AAEA;EACE"}}]
+}

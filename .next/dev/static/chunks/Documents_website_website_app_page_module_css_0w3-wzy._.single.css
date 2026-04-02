@@ -1,0 +1,73 @@
+/* [project]/Documents/website/website/app/page.module.css [app-client] (css) */
+.page-module__O-S6pW__page {
+  max-width: var(--max-width);
+  padding: 0 var(--gutter);
+  margin: 0 auto;
+}
+
+.page-module__O-S6pW__intro {
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 2.5rem;
+  padding: 3.5rem 0 2.5rem;
+}
+
+.page-module__O-S6pW__tagline {
+  font-family: var(--font-mono), monospace;
+  color: var(--text-3);
+  letter-spacing: .03em;
+  font-size: 1.1rem;
+}
+
+.page-module__O-S6pW__grid {
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  padding-bottom: 0;
+  display: grid;
+}
+
+.page-module__O-S6pW__cta {
+  border-top: 1px solid var(--border);
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2.5rem;
+  padding: 6rem 0 0;
+  display: flex;
+}
+
+.page-module__O-S6pW__ctaHeading {
+  letter-spacing: -.03em;
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.page-module__O-S6pW__ctaButton {
+  border: 1px solid var(--text);
+  letter-spacing: .02em;
+  transition: background var(--dur) var(--ease), color var(--dur) var(--ease);
+  padding: .75rem 2rem;
+  font-size: .875rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.page-module__O-S6pW__ctaButton:hover {
+  background: var(--text);
+  color: var(--white);
+}
+
+@media (max-width: 640px) {
+  .page-module__O-S6pW__grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .page-module__O-S6pW__intro {
+    margin-bottom: 1.5rem;
+    padding: 2rem 0 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=Documents_website_website_app_page_module_css_0w3-wzy._.single.css.map*/

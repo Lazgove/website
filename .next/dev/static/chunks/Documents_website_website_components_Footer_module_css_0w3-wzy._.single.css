@@ -1,0 +1,49 @@
+/* [project]/Documents/website/website/components/Footer.module.css [app-client] (css) */
+.Footer-module__Nh6Wcq__footer {
+  border-top: 1px solid var(--border);
+  padding: 2rem var(--gutter);
+  margin-top: 6rem;
+}
+
+.Footer-module__Nh6Wcq__inner {
+  max-width: var(--max-width);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 auto;
+  display: flex;
+}
+
+.Footer-module__Nh6Wcq__name {
+  letter-spacing: -.01em;
+  font-size: .8125rem;
+  font-weight: 500;
+}
+
+.Footer-module__Nh6Wcq__role {
+  font-family: var(--font-mono), monospace;
+  color: var(--text-3);
+  letter-spacing: .01em;
+  font-size: .7rem;
+}
+
+.Footer-module__Nh6Wcq__email {
+  font-family: var(--font-mono), monospace;
+  color: var(--text-3);
+  letter-spacing: .01em;
+  transition: color var(--dur) var(--ease);
+  font-size: .7rem;
+}
+
+.Footer-module__Nh6Wcq__email:hover {
+  color: var(--text);
+}
+
+@media (max-width: 640px) {
+  .Footer-module__Nh6Wcq__role {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=Documents_website_website_components_Footer_module_css_0w3-wzy._.single.css.map*/

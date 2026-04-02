@@ -1,0 +1,77 @@
+/* [project]/Documents/website/website/components/ProjectCard.module.css [app-client] (css) */
+.ProjectCard-module__3UjJ0q__card {
+  cursor: pointer;
+  flex-direction: column;
+  gap: .75rem;
+  display: flex;
+}
+
+.ProjectCard-module__3UjJ0q__thumbnail {
+  aspect-ratio: 3 / 2;
+  position: relative;
+  overflow: hidden;
+}
+
+.ProjectCard-module__3UjJ0q__shape {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: transform .6s var(--ease-out);
+  position: absolute;
+  inset: 0;
+}
+
+.ProjectCard-module__3UjJ0q__hoverLayer {
+  transition: background var(--dur) var(--ease);
+  background: none;
+  position: absolute;
+  inset: 0;
+}
+
+.ProjectCard-module__3UjJ0q__addMedia {
+  font-family: var(--font-mono), monospace;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: #fff3;
+  pointer-events: none;
+  transition: opacity var(--dur) var(--ease);
+  font-size: .62rem;
+  position: absolute;
+  bottom: 12px;
+  right: 14px;
+}
+
+.ProjectCard-module__3UjJ0q__card:hover .ProjectCard-module__3UjJ0q__shape {
+  transform: scale(1.025);
+}
+
+.ProjectCard-module__3UjJ0q__card:hover .ProjectCard-module__3UjJ0q__hoverLayer {
+  background: #0000001f;
+}
+
+.ProjectCard-module__3UjJ0q__card:hover .ProjectCard-module__3UjJ0q__addMedia {
+  opacity: .6;
+}
+
+.ProjectCard-module__3UjJ0q__meta {
+  flex-direction: column;
+  gap: .2rem;
+  display: flex;
+}
+
+.ProjectCard-module__3UjJ0q__title {
+  letter-spacing: -.015em;
+  color: var(--text);
+  font-size: .875rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.ProjectCard-module__3UjJ0q__sub {
+  font-family: var(--font-mono), monospace;
+  color: var(--text-3);
+  letter-spacing: .02em;
+  font-size: .68rem;
+}
+
+/*# sourceMappingURL=Documents_website_website_components_ProjectCard_module_css_0w3-wzy._.single.css.map*/
